@@ -4,11 +4,14 @@
   "description": "An example repository for webpack newbies",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack"
   },
   "keywords": [
     "webpack"
   ],
   "author": "daniel.delacruz@scmspain.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.12.2"
+  }
 }
