@@ -2,7 +2,7 @@
   "name": "webpack-html5spain",
   "version": "0.0.1",
   "description": "An example repository for webpack newbies",
-  "main": "src/index.js",
+  "main": "src/a.js",
   "scripts": {
     "start": "webpack"
   },
@@ -12,9 +12,9 @@
   "author": "daniel.delacruz@scmspain.com",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer-loader": "^3.1.0",
     "css-loader": "^0.21.0",
     "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.2"
   }

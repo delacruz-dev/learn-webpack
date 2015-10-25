@@ -49,7 +49,7 @@ module.exports = {
 //       include: [
 //         __dirname + "/src"
 //       ],
-//       loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+//       loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader?browsers=last 10 version")
 //     }]
 //   },
 //   output: {
