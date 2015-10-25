@@ -3,6 +3,12 @@ In this repository you will find webpack configuration examples to help you get 
 
 Navigate through the directories to learn about the different configuration possibilities and to find out more information about each one.
 
+## Instructions
+```
+git clone git@github.com:danderu/webpack-html5spain.git
+cd some_example_directory
+npm install
+````
 Just remember to type `npm install` under each directory to install the required dependencies for each example.
 ## collaborate
 Please feel free to propose new examples or ask for help with any configuration you are trying to learn.
