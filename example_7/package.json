@@ -1,0 +1,21 @@
+{
+  "name": "webpack-html5spain",
+  "version": "0.0.1",
+  "description": "An example repository for webpack newbies",
+  "main": "src/a.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "daniel.delacruz@scmspain.com",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.21.0",
+    "style-loader": "^0.13.0",
+    "webpack-dev-server": "^1.12.1",
+    "webpack": "1.12.2"
+  }
+}
