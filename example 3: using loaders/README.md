@@ -1,17 +1,38 @@
-## Using loaders
-In this example we'll try to illustrate how webpack works. It extends the the require() function of node.js, so by default it can load any javascript module.
+# Using loaders
+Webpack works extending the behavior of the `require()` function in Node.JS. That's why by default it can load any javascript module written in [CommonJS](http://www.commonjs.org/), the Node.JS module system.
 
-You can test this configuration hitting `npm start` in your CLI, to generate a bundle using the content of the `./src/index.js` file.
+With the usage of loaders, webpack can extend the functionality of the `require()` function to load almost any file type and syntax or, in case you need it, to [create your own loaders](https://webpack.github.io/docs/how-to-write-a-loader.html).
 
-But with the usage of loaders, webpack can extend the functionality of the require function to load almost any file type and syntax. If you uncomment and replace the existing content the following code in `./src/index.js` file, you'll  convert the node module to an [ECMAScript2015 (ES6)](http://www.ecma-international.org/ecma-262/6.0/) module:
-
+## Modules in ECMAScript 2015
+In this example you will find a module under the `./src` folder written in [ECMAScript2015 (ES6)](http://www.ecma-international.org/ecma-262/6.0/), the latest version of the JavaScript language standard.
 ```javascript
 export function helloWorld() {
 	return console.log('This is the index page');
 }
 ```
-You should notice the difference on hitting `npm start` again, since the code generated will be pre-processed by the babel-loader, a [Babel](http://babeljs.io/) wrapper to transpile ES6 to ES5.
+ES6 uses its own module creation and importing system, as well as a syntax that not every browser is able to understand. The same for other language that compile to JavaScript, as CoffeeScript or Typscript, as well.
 
-Also notice the `include` property specified over the `babel-loader` configuration. This is important, to make sure that webpack will only take care of the application scripts and ignore others, such as the `node_modules` directory.
+But with the usage of Webpack and the help of an specific loader to understand the new syntax, we can work with our preferred language and yet ensure backwards compatibility most of the browsers and clients.
 
-There are webpack loaders for almost any kind of files and languages in the wild: SCSS, LESS, CoffeeScript, ReactJS, images and so on. 
+## How does the Babel loader work
+In this example we are using the `babel-loader`, a [Babel](http://babeljs.io/) wrapper to [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) ES6 to ES5.
+
+You will find a new section in the `webpack.config.js` file, the `modules` section. This is the place to include the `loaders` and their configurations. Let's inspect the Babel loader's configuration:
+```javascript
+module: {
+  loaders: [{
+    test: /\.js$/,
+    include: [
+      __dirname + "/src"
+    ],
+    loader: "babel-loader"
+  }]
+},
+```
+Loaders are passed as an array of configuration objects, with the following available properties:
+-`test`: A regular expressions to match the file extensions where the loader will trigger
+-`include`: The folders to include in the matching rule. If a folder is not included in a loader, it will not trigger in any of its file, no matter that it matches the file extension. Also, if no folders are included, any folder triggers the rule. 
+  - By analogy, there is also the possibility to add a `exclude` entry with the opposing behavior. This is useful if you only whant to exclude folders as `node_modules`, for instance.
+-`loader`: You can pass in a single loader or an array of `loaders` to act one after another. In this case, we are only using babel, to transpile ES6 to ES5.
+
+There are webpack loaders for almost any kind of files and languages in the wild: SCSS, LESS, CoffeeScript, ReactJS, images and so on. We will review some of them in the following examples.
