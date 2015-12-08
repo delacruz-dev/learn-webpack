@@ -1,10 +1,10 @@
 {
-  "name": "webpack-html5spain",
+  "name": "learn-webpack",
   "version": "0.0.1",
   "description": "An example repository for webpack newbies",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack"
+    "dist": "webpack"
   },
   "keywords": [
     "webpack"
