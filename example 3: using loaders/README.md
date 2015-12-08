@@ -7,7 +7,7 @@ With the usage of loaders, webpack can extend the functionality of the `require(
 In this example you will find a module under the `./src` folder written in [ECMAScript2015 (ES6)](http://www.ecma-international.org/ecma-262/6.0/), the latest version of the JavaScript language standard.
 ```javascript
 export function helloWorld() {
-	return console.log('This is the index page');
+  return console.log('This is the index page');
 }
 ```
 ES6 uses its own module creation and importing system, as well as a syntax that not every browser is able to understand. The same for other language that compile to JavaScript, as CoffeeScript or Typscript, as well.
