@@ -1,0 +1,23 @@
+{
+  "name": "learn-webpack",
+  "version": "0.0.1",
+  "description": "An example repository for webpack newbies",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "daniel.delacruz@scmspain.com",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.3.2"
+  }
+}
