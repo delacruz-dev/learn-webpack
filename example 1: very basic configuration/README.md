@@ -9,7 +9,7 @@ Anyways, what we are going to see in this example is the simplest configuration 
 The file exports a node module with entries for every configuration possible. In this example, we just are setting a couple of properties:
 
 - `entry`: It sets the working context. Webpack look in the specified directory for an entry point to start resolving your modules and generating your bundle. In the example, we've set the `./src` folder, which contains a simple `index.js` file with a `Hello World!` script.
-- `output`: is intended for setting the output directory and file name for our bundle. 
+- `output`: is intended for setting the output directory and file name for our bundle. You don't have to manually create the `./dist` folder, webpack will do it for you.
 
 One mor thing: If you inspect the `package.json` file, you will find a script for triggering the module generation. It just calls `webpack` command.
 

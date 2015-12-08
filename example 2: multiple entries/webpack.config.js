@@ -5,7 +5,7 @@ module.exports = {
     user: ["./user", "./account"]
   },
   output: {
-      path: "./dist",
-      filename: "[name].bundle.[hash].js"
+    path: "./dist",
+    filename: "[name].bundle.[hash].js"
   }
 };
