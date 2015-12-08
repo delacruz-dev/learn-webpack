@@ -1,17 +1,14 @@
 module.exports = {
-  context: __dirname + "/src",
-  entry: "./",
+  entry: __dirname + '/src',
   module: {
     loaders: [{
       test: /\.js$/,
-      include: [
-        __dirname + "/src"
-      ],
-      loader: "babel-loader"
+      include: __dirname + '/src',
+      loader: 'babel'
     }]
   },
   output: {
-      path: __dirname + "/dist",
-      filename: "[name].bundle.[hash].js"
+    path: './dist',
+    filename: 'bundle.js'
   }
 };

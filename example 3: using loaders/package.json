@@ -4,7 +4,7 @@
   "description": "An example repository for webpack newbies",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack"
+    "dist": "webpack"
   },
   "keywords": [
     "webpack"
@@ -12,7 +12,10 @@
   "author": "daniel.delacruz@scmspain.com",
   "license": "MIT",
   "devDependencies": {
-    "babel-loader": "^5.3.2",
-    "webpack": "^1.12.2"
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "webpack": "^1.12.9"
   }
 }

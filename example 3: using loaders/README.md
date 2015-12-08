@@ -6,8 +6,10 @@ With the usage of loaders, webpack can extend the functionality of the `require(
 ## Modules in ECMAScript 2015
 In this example you will find a module under the `./src` folder written in [ECMAScript2015 (ES6)](http://www.ecma-international.org/ecma-262/6.0/), the latest version of the JavaScript language standard.
 ```javascript
-export function helloWorld() {
-  return console.log('This is the index page');
+export default class HelloWorld {
+  salute = () => {
+    return console.log('Hello World!');
+  }
 }
 ```
 ES6 uses its own module creation and importing system, as well as a syntax that not every browser is able to understand. The same for other language that compile to JavaScript, as CoffeeScript or Typscript, as well.
@@ -15,17 +17,15 @@ ES6 uses its own module creation and importing system, as well as a syntax that 
 But with the usage of Webpack and the help of an specific loader to understand the new syntax, we can work with our preferred language and yet ensure backwards compatibility most of the browsers and clients.
 
 ## How does the Babel loader work
-In this example we are using the `babel-loader`, a [Babel](http://babeljs.io/) wrapper to [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) ES6 to ES5.
+In this example we are using the [`babel-loader`](https://github.com/babel/babel-loader), a [Babel](http://babeljs.io/) wrapper to [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) ES6 to ES5.
 
 You will find a new section in the `webpack.config.js` file, the `modules` section. This is the place to include the `loaders` and their configurations. Let's inspect the Babel loader's configuration:
 ```javascript
 module: {
   loaders: [{
     test: /\.js$/,
-    include: [
-      __dirname + "/src"
-    ],
-    loader: "babel-loader"
+    include: __dirname + '/src',
+    loader: 'babel'
   }]
 },
 ```

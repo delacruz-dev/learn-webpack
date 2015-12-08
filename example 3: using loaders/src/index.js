@@ -1,3 +1,5 @@
-export function helloWorld() {
-  return console.log('Hello World!');
+export default class HelloWorld {
+  salute = () => {
+    return console.log('Hello World!');
+  }
 }
