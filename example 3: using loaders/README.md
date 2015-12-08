@@ -30,9 +30,10 @@ module: {
 },
 ```
 Loaders are passed as an array of configuration objects, with the following available properties:
--`test`: A regular expressions to match the file extensions where the loader will trigger
--`include`: The folders to include in the matching rule. If a folder is not included in a loader, it will not trigger in any of its file, no matter that it matches the file extension. Also, if no folders are included, any folder triggers the rule. 
+
+- `test`: A regular expressions to match the file extensions where the loader will trigger
+- `include`: The folders to include in the matching rule. If a folder is not included in a loader, it will not trigger in any of its file, no matter that it matches the file extension. Also, if no folders are included, any folder triggers the rule. 
   - By analogy, there is also the possibility to add a `exclude` entry with the opposing behavior. This is useful if you only whant to exclude folders as `node_modules`, for instance.
--`loader`: You can pass in a single loader or an array of `loaders` to act one after another. In this case, we are only using babel, to transpile ES6 to ES5.
+- `loader`: You can pass in a single loader or an array of `loaders` to act one after another. In this case, we are only using babel, to transpile ES6 to ES5.
 
 There are webpack loaders for almost any kind of files and languages in the wild: SCSS, LESS, CoffeeScript, ReactJS, images and so on. We will review some of them in the following examples.
