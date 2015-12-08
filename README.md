@@ -1,3 +1,5 @@
+[![NPM Version][npm-image]][npm-url]
+
 # learn-webpack
 Webpack helps you managing dependencies in your project, and also offers a friendly and fast development environment, simplifying a lot of common tasks behind a simple configuration file. 
 
