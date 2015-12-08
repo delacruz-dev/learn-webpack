@@ -21,3 +21,7 @@ npm install
 
 ## How to collaborate
 Please feel free to propose new examples or ask for help with any configuration you are trying to learn.
+
+
+[npm-image]: https://img.shields.io/npm/v/@schibstedspain/generator-sui-react.svg?style=flat
+[npm-url]: https://npmjs.com/@schibstedspain/generator-sui-react
