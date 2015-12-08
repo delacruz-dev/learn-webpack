@@ -1,11 +1,11 @@
 module.exports = {
-  context: "./src",
+  context: './src',
   entry: {
-    home: "./home",
-    user: ["./user", "./account"]
+    home: './home',
+    user: ['./user', './account']
   },
   output: {
-    path: "./dist",
-    filename: "[name].bundle.[hash].js"
+    path: './dist',
+    filename: '[name].bundle.[hash].js'
   }
 };

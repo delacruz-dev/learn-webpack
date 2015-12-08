@@ -36,4 +36,6 @@ Loaders are passed as an array of configuration objects, with the following avai
   - By analogy, there is also the possibility to add a `exclude` entry with the opposing behavior. This is useful if you only whant to exclude folders as `node_modules`, for instance.
 - `loader`: You can pass in a single loader or an array of `loaders` to act one after another. In this case, we are only using babel, to transpile ES6 to ES5.
 
+When you run `npm run dist` in this example, you should notice that the resulting bundle file does not have ES2015 syntax. This is what Babel does.
+
 There are webpack loaders for almost any kind of files and languages in the wild: SCSS, LESS, CoffeeScript, ReactJS, images and so on. We will review some of them in the following examples.
