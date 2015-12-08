@@ -4,7 +4,7 @@
   "description": "An example repository for webpack newbies",
   "main": "src/a.js",
   "scripts": {
-    "start": "webpack"
+    "dist": "webpack"
   },
   "keywords": [
     "webpack"

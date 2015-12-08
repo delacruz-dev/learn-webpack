@@ -2,26 +2,26 @@
 // var webpack = require('webpack');
 
 module.exports = {
-  context: __dirname + "/src",
-  entry: "./",
+  context: __dirname + '/src',
+  entry: './',
   module: {
     loaders: [{
       test: /\.css$/,
       include: [
-        __dirname + "/src"
+        __dirname + '/src'
       ],
-      loader: "style-loader!css-loader"
-//    loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-//    loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader?browsers=last 10 version")
+      loader: 'style-loader!css-loader'
+//    loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+//    loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader?browsers=last 10 version')
     }]
   },
   output: {
-      path: __dirname + "/dist",
-      filename: "[name].bundle.[hash].js"
+      path: __dirname + '/dist',
+      filename: '[name].bundle.[hash].js'
   }
 //,
 //   plugins: [
-//     new ExtractTextPlugin("[name].css")
+//     new ExtractTextPlugin('[name].css')
 //     , new webpack.optimize.UglifyJsPlugin({
 //       compress: {
 //         warnings: false

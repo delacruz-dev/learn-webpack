@@ -1,41 +1,27 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
-2 info using npm@3.3.5
-3 info using node@v0.12.7
-4 verbose node symlink /usr/local/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info lifecycle webpack-html5spain@0.0.1~prestart: webpack-html5spain@0.0.1
-7 silly lifecycle webpack-html5spain@0.0.1~prestart: no script for prestart, continuing
-8 info lifecycle webpack-html5spain@0.0.1~start: webpack-html5spain@0.0.1
-9 verbose lifecycle webpack-html5spain@0.0.1~start: unsafe-perm in lifecycle true
-10 verbose lifecycle webpack-html5spain@0.0.1~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/daniel.delacruz/Desktop/projects/workshops/webpack-html5spain/example_7/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-11 verbose lifecycle webpack-html5spain@0.0.1~start: CWD: /Users/daniel.delacruz/Desktop/projects/workshops/webpack-html5spain/example_7
-12 silly lifecycle webpack-html5spain@0.0.1~start: Args: [ '-c', 'webpack-dev-server --hot' ]
-13 silly lifecycle webpack-html5spain@0.0.1~start: Returned: code: 1  signal: null
-14 info lifecycle webpack-html5spain@0.0.1~start: Failed to exec start script
-15 verbose stack Error: webpack-html5spain@0.0.1 start: `webpack-dev-server --hot`
-15 verbose stack Exit status 1
-15 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
-15 verbose stack     at EventEmitter.emit (events.js:110:17)
-15 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-15 verbose stack     at ChildProcess.emit (events.js:110:17)
-15 verbose stack     at maybeClose (child_process.js:1015:16)
-15 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-16 verbose pkgid webpack-html5spain@0.0.1
-17 verbose cwd /Users/daniel.delacruz/Desktop/projects/workshops/webpack-html5spain/example_7
-18 error Darwin 14.5.0
-19 error argv "node" "/usr/local/bin/npm" "start"
-20 error node v0.12.7
-21 error npm  v3.3.5
-22 error code ELIFECYCLE
-23 error webpack-html5spain@0.0.1 start: `webpack-dev-server --hot`
-23 error Exit status 1
-24 error Failed at the webpack-html5spain@0.0.1 start script 'webpack-dev-server --hot'.
-24 error This is most likely a problem with the webpack-html5spain package,
-24 error not with npm itself.
-24 error Tell the author that this fails on your system:
-24 error     webpack-dev-server --hot
-24 error You can get their info via:
-24 error     npm owner ls webpack-html5spain
-24 error There is likely additional logging output above.
-25 verbose exit [ 1, true ]
+1 verbose cli [ '/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose stack Error: missing script: dev
+4 verbose stack     at run (/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/run-script.js:148:19)
+4 verbose stack     at /Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/run-script.js:58:5
+4 verbose stack     at /Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
+4 verbose stack     at checkBinReferences_ (/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
+4 verbose stack     at final (/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
+4 verbose stack     at then (/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
+4 verbose stack     at /Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:232:12
+4 verbose stack     at /Users/daniel.delacruz/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
+4 verbose stack     at tryToString (fs.js:414:3)
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:401:12)
+5 verbose cwd /Users/daniel.delacruz/Desktop/projects/workshops/learn-webpack/example 7: dev server with hot module replacement
+6 error Darwin 14.5.0
+7 error argv "/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/bin/node" "/Users/daniel.delacruz/.nvm/versions/node/v5.0.0/bin/npm" "run" "dev"
+8 error node v5.0.0
+9 error npm  v3.3.6
+10 error missing script: dev
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
