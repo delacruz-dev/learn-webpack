@@ -17,5 +17,5 @@ cd some_example_directory
 npm install
 ````
 
-## collaborate
+## How to collaborate
 Please feel free to propose new examples or ask for help with any configuration you are trying to learn.
