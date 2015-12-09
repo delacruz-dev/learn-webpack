@@ -4,7 +4,9 @@
   "description": "An example repository for webpack newbies",
   "main": "src/index.js",
   "scripts": {
-    "dist": "webpack"
+    "styles": "webpack --config webpack.styles.config.js",
+    "extract-text": "webpack --config webpack.extracttext.config.js",
+    "autoprefixer": "webpack --config webpack.autoprefixer.config.js"
   },
   "keywords": [
     "webpack"
