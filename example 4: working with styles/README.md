@@ -40,21 +40,5 @@ Also, in the `./src/index.css` file, uncomment the `.example` block.
 
 When you hit `npm run dist`, you should notice that in the css bundle the autoprefixer loader has added browser-specific prefixes to some of the styles.
 
-## Minification
-
-One more thing: The generated styles and JS bundles are not minified, and this is for sure one thing you may want to include in your application before releasing it to production. For minification, webpack includes an `UglifyPlugin`, which can be configured in the `plugins` section of your config file. We've already included a sample configuration, so just uncomment the following lines in the `webpack.config.js`:
-
-```javascript
-var webpack = require('webpack');
-...
-, new webpack.optimize.UglifyJsPlugin({
-       compress: {
-         warnings: false
-       }
-     })
-```
-
-Finally, hit `npm run dist` again and see what happens to your generated bundle sizes and code.
-
 ## Conclusion
 Plugins and loaders can easily be configured and used together, joining forces to optimize your workflow and doing the hard work for you.
