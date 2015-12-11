@@ -14,16 +14,13 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
-    loaders: [
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-      },
-      { 
-        test: /\.png$/, 
-        loader: 'file-loader' 
-      }
-    ]
+    loaders: [{
+      test: /\.css$/,
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+    }, { 
+      test: /\.png$/, 
+      loader: 'file-loader' 
+    }]
   },
   plugins: [
     new CommonsChunkPlugin('commons', 'commons.js', ['A', 'B']),
