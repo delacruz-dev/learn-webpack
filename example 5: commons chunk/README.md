@@ -37,6 +37,6 @@ If you type `npm run dist` in your terminal, you should see the power of Webpack
 - `common.css`: The same for the `css` code.
 - `A.js`, `B.js` and `C.js`: One bundle is generated for each entry configured in webpack. Notice that, since the C entry is not included in the `CommonsChunkPlugin, it has a significant amount of code compared with the others.
 - `A.css`, `B.css` and `C.css`: Once again, the same for the `css` code.
-- One png file: there is only one because the Webpack `file-loader` calculates the hash of the file for every image file, and the three images in this example are exactly the same :) But it's interesting to see how it replaces the file name in the generated `css` files.
+- One png file: there is only one because the Webpack [`file-loader`](https://github.com/webpack/file-loader) calculates the hash of the file for every image file, and the three images in this example are exactly the same :) But it's interesting to see how it replaces the file name in the generated `css` files.
 
 It may be a good idea to play with this example removing the `CommonsChunkPlugin` configuration and comparing the generated bundles with the previous ones.
