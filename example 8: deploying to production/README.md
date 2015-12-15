@@ -9,10 +9,10 @@ One more thing: The generated styles and JS bundles are not minified, and this i
 var webpack = require('webpack');
 ...
 , new webpack.optimize.UglifyJsPlugin({
-       compress: {
-         warnings: false
-       }
-     })
+  compress: {
+    warnings: false
+  }
+})
 ```
 
 Finally, hit `npm run dist` again and see what happens to your generated bundle sizes and code.
