@@ -14,10 +14,11 @@ Navigate into the example folders to find out webpack configuration examples to 
 After cloning this repository, you'll have to make a `npm install` under each example directory to install the required node dependencies for each example.
 
 ```
-git clone git@github.com:danderu/webpack-html5spain.git
+git clone git@github.com:danderu/learn-webpack.git
+cd learn-webpack
 cd some_example_directory
 npm install
-````
+```
 
 ## How to collaborate
 Please feel free to propose new examples or ask for help with any configuration you are trying to learn.
