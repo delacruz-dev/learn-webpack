@@ -1,5 +1,3 @@
-[![NPM Version][npm-image]][npm-url]
-
 # learn-webpack
 Webpack helps you managing dependencies in your project, and also offers a friendly and fast development environment, simplifying a lot of common tasks behind a simple configuration file. 
 
@@ -22,7 +20,3 @@ npm install
 
 ## How to collaborate
 Please feel free to propose new examples or ask for help with any configuration you are trying to learn.
-
-
-[npm-image]: https://img.shields.io/npm/v/@schibstedspain/generator-sui-react.svg?style=flat
-[npm-url]: https://npmjs.com/@schibstedspain/generator-sui-react
