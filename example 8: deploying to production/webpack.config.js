@@ -14,13 +14,8 @@ var common = {
     filename: '[name].js',
     publicPath: 'http://localhost:3000/dist'
   },
-  module: {
-    loaders: [{
-      test: /\.css$/,
-      loaders: [ 'style-loader', 'css-loader' ],
-      include: APP_PATH
-    }]
-  }
+  module: { loaders: [] },
+  plugins: []
 };
 
 if(TARGET === 'start' || !TARGET) {
@@ -31,6 +26,13 @@ if(TARGET === 'start' || !TARGET) {
       inline: true,
       publicPath: '/dist/'
     },
+    module: {
+      loaders: [{
+        test: /\.css$/,
+        loaders: [ 'style-loader', 'css-loader' ],
+        include: APP_PATH
+      }]
+    },
     plugins: [
       new webpack.HotModuleReplacementPlugin()
     ]
@@ -39,18 +41,22 @@ if(TARGET === 'start' || !TARGET) {
 
 if(TARGET === 'build') {
   module.exports = merge(common, {
-    loaders: [{
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
-      include: APP_PATH
-    }],
+    module: {
+      loaders: [{
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+        include: APP_PATH
+      }]
+    },
     plugins: [
-      new ExtractTextPlugin('[name].css'),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false
-        }
+      new ExtractTextPlugin('[name].css', { 
+        allChunks: true 
       })
+      // , new webpack.optimize.UglifyJsPlugin({
+      //   compress: {
+      //     warnings: false
+      //   }
+      // })
     ]
   });
 }
