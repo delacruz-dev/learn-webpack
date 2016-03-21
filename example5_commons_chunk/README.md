@@ -13,7 +13,7 @@ entry: {
   B: './b',
   C: './c',
 }
-``
+```
 In the `plugins` section, you can find the `CommonsChunkPlugin` configured to extract the common code of `A` and `B` entries, but not `C`:
 
 ```javascript
@@ -35,7 +35,7 @@ If you type `npm run dist` in your terminal, you should see the power of Webpack
 
 - `commons.js`: A file with the common javascript code shared between `A.js` and `B.js` modules.
 - `common.css`: The same for the `css` code.
-- `A.js`, `B.js` and `C.js`: One bundle is generated for each entry configured in webpack. Notice that, since the C entry is not included in the `CommonsChunkPlugin, it has a significant amount of code compared with the others.
+- `A.js`, `B.js` and `C.js`: One bundle is generated for each entry configured in webpack. Notice that, since the C entry is not included in the `CommonsChunkPlugin`, it has a significant amount of code compared with the others.
 - `A.css`, `B.css` and `C.css`: Once again, the same for the `css` code.
 - One png file: there is only one because the Webpack [`file-loader`](https://github.com/webpack/file-loader) calculates the hash of the file for every image file, and the three images in this example are exactly the same :) But it's interesting to see how it replaces the file name in the generated `css` files.
 
