@@ -35,7 +35,7 @@ As you may have noticed, the previous example only generates a bundle with js an
 In that case, you'll need to install the `extract-text-webpack-plugin` (already included in the `package.json`). This plugin, used as a loader, works extracting the css styles in the generated bundle into a pure `.css` bundle. Everything is already configured for you in the `webpack.extracttext.config.js` file. If you wan to the two resulting bundles, type in your terminal:
 ```
 $ npm run extract-text
-````
+```
 ## Manipulate styles
 Let's say you would like to apply some automatic modifications to your styles, like for instance, using [autoprefixer](https://github.com/postcss/autoprefixer). In this case, we can use another loader, the [autoprefixer-loader](https://github.com/passy/autoprefixer-loader), also included in the `package.json`. This new configuration is located in the `webpack.autoprefixer.config.js` file. 
 
