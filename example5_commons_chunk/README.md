@@ -1,6 +1,6 @@
 # Commons chunk
 
-In the following example we have three modules: `a`, `b` and `c`. Every one of them has its own css style guide and all of them are sharing a base style guide. The only difference is that, while `a` and `b` are requiring the base style sheet directly in the JavaScript module using `require()`, `c` is importing it via css `@import`. 
+In the following example we have three modules: `a`, `b` and `c`. Every one of them has its own css stylesheet and all of them are sharing a base stylesheet. The only difference is that, while `a` and `b` are requiring the base style sheet directly in the JavaScript module using `require()`, `c` is importing it via css `@import`. 
 
 ## The CommonsChunkPlugin
 The `webpack.config.js` file has already configured one of the most useful plugins for Webpack: `CommonsChunkPlugin`. It extracts the common content of the provided entry points into a separate bundle, and works with JavaScript, css and other file types, such as images (with the appropiate loader).
