@@ -14,7 +14,7 @@ entry: {
 ```
 We are configuring webpack to consider the `jquery` and `underscore` dependencies as a `vendor` entry. This way, when it finds a module in the `require()` call that matches any of the values configured in the `vendor` entry, it will split the code and put it into the vendors bundle.
 
-The other needed configuration is for the `CommonsChunkPlugin`. In this example, we are providing `vendors` as a chunk name and a proper name for the generated bundle:
+The other needed configuration is for the `CommonsChunkPlugin`. In this example, we are providing `vendor` as a chunk name and a proper name for the generated bundle:
 ```javascript
 new webpack.optimize.CommonsChunkPlugin(
   /* chunkName= */"vendor", 
