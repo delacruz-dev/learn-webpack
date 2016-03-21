@@ -22,7 +22,7 @@ Every dev server properties are contained under the `devServer` property in the 
 
 - `port`: The port in our localhost where the server will start. In the example, we'll be able to access our server introducing the url [http://localhost:3000](http://localhost:3000) in a browser.
 - `stats`: It just makes the output in the terminal more reader friendly. 
-- `inline`: Enables the inlin mode, allowing you to navigate directly to [http://localhost:3000](http://localhost:3000) to test your app. Otherwise, you would have to access [http://localhost:3000/webpack-dev-server/](http://localhost:3000/webpack-dev-server/) and your app would be displayed in an iframe. Both options are available in `inline` mode.
+- `inline`: Enables the inline mode, allowing you to navigate directly to [http://localhost:3000](http://localhost:3000) to test your app. Otherwise, you would have to access [http://localhost:3000/webpack-dev-server/](http://localhost:3000/webpack-dev-server/) and your app would be displayed in an iframe. Both options are available in `inline` mode.
 - `publicPath`: Sets the URI path to access the generated static assets via client browser.
 
 ## Configuring the Hot Module Replacement
