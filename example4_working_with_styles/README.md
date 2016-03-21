@@ -23,7 +23,7 @@ loaders: [{
   loader: 'style-loader!css-loader'
 }]
 ```
-As you can see, the `test` expression now matches any file with a `.css` extensions, and only that ones included under the `./src` folder. The loaders we are using are `style-loader` and `css-loader`. It's not clear what's the difference between each other, since the documentation is not very explanative. But both are commonly used together and allow you to import CSS files into your single page application and bundle them.
+As you can see, the `test` expression now matches any file with a `.css` extensions, and only that ones included under the `./src` folder. The loaders we are using are `style-loader` and `css-loader`. The latter just picks the contents of the CSS file, while the `style-loader` appends `<style>` elements to the end of the `<head>` tag of the page (or as `<link>` element).
 
 To try it out, type in your terminal:
 ```
