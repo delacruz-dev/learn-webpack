@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/danderu/learn-webpack/badges/gpa.svg)](https://codeclimate.com/github/danderu/learn-webpack)
+
 # Learn Webpack
 [Webpack](https://webpack.github.io/) helps you managing dependencies in your project, and also offers a friendly and fast development environment, simplifying a lot of common tasks behind a simple configuration file. 
 
