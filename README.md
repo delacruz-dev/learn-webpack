@@ -21,7 +21,7 @@ If you need more information about forking a repository, follow this [guide](htt
 ## Repository index
 Navigate into the example folders to find out the different webpack configuration examples to help you get started with this module bundler. You will learn about the different configuration possibilities, from the simplest one to the most advanced configuration for deploying into production your bundles.
 
-* [Example 1: Very basic webpack configuration](https://github.com/danderu/learn-webpack/tree/master/example1_very_vasic_configuration)
+* [Example 1: Very basic webpack configuration](https://github.com/danderu/learn-webpack/tree/master/example1_very_basic_configuration)
 * [Example 2: Multiple entries](https://github.com/danderu/learn-webpack/tree/master/example2_multiple_entries)
 * [Example 3: Using loaders](https://github.com/danderu/learn-webpack/tree/master/example3_using_loaders)
 * [Example 4: Working with styles](https://github.com/danderu/learn-webpack/tree/master/example4_working_with_styles)
