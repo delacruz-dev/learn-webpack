@@ -15,4 +15,4 @@ var webpack = require('webpack');
 })
 ```
 
-Finally, hit `npm run dist` again and see what happens to your generated bundle sizes and code.
+Finally, hit `npm run build` again and see what happens to your generated bundle sizes and code.
