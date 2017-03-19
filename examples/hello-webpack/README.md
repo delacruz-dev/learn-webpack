@@ -39,7 +39,7 @@ You should see the resulting `bundle.js` file created under in the root folder. 
 If you want to test if your generated bundle works in a browser, just open the `index.html` file located at the root of this directory in your prefered web browser, or:
 
 ```sh
-open index.html
+> open index.html
 ```
 
 ## The Webpack configuration file
