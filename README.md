@@ -10,12 +10,15 @@ Unfortunately, webpack doc pages are not friendly enough for beginners like me. 
 ## How to use this repository
 First of all, clone or fork this repository. If you are not used with npm or git, This is what you basically need to do:
 
+The examples in this repository use [yarn](https://yarnpkg.com/en/) as dependecy package manager, to take advantage of yarn's cache, since most of them reuse the same dependencies. In the examples it is assumed that you've already [installed yarn](https://yarnpkg.com/en/docs/install), although it's not mandatory. You could always do `npm install` to install the dependencies in every example.
+
 ```
 git clone git@github.com:danderu/learn-webpack.git
 cd learn-webpack
 cd examples/some_example_directory
-npm install
+yarn
 ```
+
 If you need more information about forking a repository, follow this [guide](https://help.github.com/articles/fork-a-repo/).
 
 ## Repository index
