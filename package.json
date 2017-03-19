@@ -1,5 +1,10 @@
 {
-  "dependencies": {},
+  "scripts": {
+    "commitmsg": "validate-commit-msg"
+  },
+  "dependencies": {
+    "husky": "^0.13.2"
+  },
   "devDependencies": {
     "validate-commit-msg": "^2.11.2"
   }
