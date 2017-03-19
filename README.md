@@ -13,7 +13,7 @@ First of all, clone or fork this repository. If you are not used with npm or git
 ```
 git clone git@github.com:danderu/learn-webpack.git
 cd learn-webpack
-cd some_example_directory
+cd examples/some_example_directory
 npm install
 ```
 If you need more information about forking a repository, follow this [guide](https://help.github.com/articles/fork-a-repo/).
@@ -21,14 +21,14 @@ If you need more information about forking a repository, follow this [guide](htt
 ## Repository index
 Navigate into the example folders to find out the different webpack configuration examples to help you get started with this module bundler. You will learn about the different configuration possibilities, from the simplest one to the most advanced configuration for deploying into production your bundles.
 
-* [Example 1: Very basic webpack configuration](https://github.com/danderu/learn-webpack/tree/master/example1_very_basic_configuration)
-* [Example 2: Multiple entries](https://github.com/danderu/learn-webpack/tree/master/example2_multiple_entries)
-* [Example 3: Using loaders](https://github.com/danderu/learn-webpack/tree/master/example3_using_loaders)
-* [Example 4: Working with styles](https://github.com/danderu/learn-webpack/tree/master/example4_working_with_styles)
-* [Example 5: Commons chunk](https://github.com/danderu/learn-webpack/tree/master/example5_commons_chunk)
-* [Example 6: Vendors chunk](https://github.com/danderu/learn-webpack/tree/master/example6_vendors_chunk)
-* [Example 7: Setting up a development environment](https://github.com/danderu/learn-webpack/tree/master/example7_setting_up_a_development_environment)
-* [Example 8: Deploying to production](https://github.com/danderu/learn-webpack/tree/master/example8_deploying_to_production)
+* [Example 1: Hello world! with Webpack](https://github.com/danderu/learn-webpack/tree/master/examples/hello-webpack)
+* [Example 2: Multiple entries](https://github.com/danderu/learn-webpack/tree/master/examples/multiple-entries)
+* [Example 3: Loaders](https://github.com/danderu/learn-webpack/tree/master/examples/loaders)
+* [Example 4: Styles](https://github.com/danderu/learn-webpack/tree/master/examples/styles)
+* [Example 5: Chunks](https://github.com/danderu/learn-webpack/tree/master/examples/chunks)
+* [Example 6: Vendors](https://github.com/danderu/learn-webpack/tree/master/examples/vendors)
+* [Example 7: Development environment setup](https://github.com/danderu/learn-webpack/tree/master/examples/development-environment-setup)
+* [Example 8: Optimizations for production](https://github.com/danderu/learn-webpack/tree/master/optimizations-for-production)
 
 ## How to collaborate
 Please feel free to propose new examples or ask for help with any configuration you are trying to learn.
