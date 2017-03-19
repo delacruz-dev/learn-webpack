@@ -1,0 +1,6 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "validate-commit-msg": "^2.11.2"
+  }
+}
