@@ -1,5 +1,11 @@
 [![Code Climate](https://codeclimate.com/github/danderu/learn-webpack/badges/gpa.svg)](https://codeclimate.com/github/danderu/learn-webpack)
 
+---
+
+**(Jul 2020) learn-webpack is not maintained anymore**. I created this repository 5 years ago, when I was learning how to use Webpack and the documentation was poor and confusing. Since back then the community has done a great effort and I think [Webpack documentation](https://webpack.js.org/concepts/) has become one of the best resources to learn how to use this library. Please go there to learn it, and feel free to write an issue or send me a message if you need my support with any of the examples I added in this repository.
+
+---
+
 # Learn Webpack
 [Webpack](https://webpack.github.io/) helps you managing dependencies in your project, and also offers a friendly and fast development environment, simplifying a lot of common tasks behind a simple configuration file. 
 
